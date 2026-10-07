@@ -1,1 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Resume</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f2f4f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: #1e293b;
+      color: white;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    .header h3 {
+      color: #38bdf8;
+      font-weight: normal;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    /* Main Content */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .left,
+    .right {
+      padding: 35px;
+    }
+
+    .left {
+      background: #f8fafc;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #1e293b;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px 3px;
+      font-size: 14px;
+    }
+
+    .item {
+      margin-bottom: 25px;
+    }
+
+    .item h3 {
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    .date {
+      color: #0284c7;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .item p {
+      margin-top: 8px;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        width: 95%;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Profile Header -->
+    <header class="header">
+
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Profile Photo"
+        class="profile-img"
+      >
+
+      <div>
+        <h1>John Doe</h1>
+        <h3>Web Developer</h3>
+        <p>
+          Passionate developer who enjoys building modern,
+          responsive and user-friendly websites.
+        </p>
+      </div>
+
+    </header>
+
+    <div class="content">
+
+      <!-- LEFT SIDE -->
+      <aside class="left">
+
+        <!-- Contact -->
+        <section class="contact">
+          <h2>Contact</h2>
+
+          <p>📧 john@example.com</p>
+          <p>📱 +91 98765 43210</p>
+          <p>📍 Mumbai, India</p>
+          <p>🌐 www.johndoe.com</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+          <h2>Skills</h2>
+
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Git</span>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h2>Education</h2>
+
+          <div class="item">
+            <h3>B.Tech Computer Science</h3>
+            <div class="date">2021 - 2025</div>
+            <p>ABC University</p>
+          </div>
+
+          <div class="item">
+            <h3>Higher Secondary</h3>
+            <div class="date">2019 - 2021</div>
+            <p>XYZ Junior College</p>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- RIGHT SIDE -->
+      <main class="right">
+
+        <!-- About -->
+        <section>
+          <h2>About Me</h2>
+
+          <p>
+            I am a motivated web developer with a strong interest in
+            frontend and backend development. I enjoy creating clean,
+            efficient and responsive applications and continuously
+            learning new technologies.
+          </p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+          <h2>Experience</h2>
+
+          <div class="item">
+            <h3>Frontend Developer - ABC Technologies</h3>
+            <div class="date">2025 - Present</div>
+
+            <ul>
+              <li>Developed responsive web applications.</li>
+              <li>Created reusable UI components.</li>
+              <li>Worked with JavaScript and React.</li>
+              <li>Collaborated with designers and backend developers.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Web Developer Intern - XYZ Solutions</h3>
+            <div class="date">2024 - 2025</div>
+
+            <ul>
+              <li>Built websites using HTML, CSS and JavaScript.</li>
+              <li>Fixed UI bugs and improved website performance.</li>
+              <li>Worked with Git and GitHub.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+          <h2>Projects</h2>
+
+          <div class="item">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              Designed and developed a responsive portfolio website
+              to showcase my skills, projects and experience.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Online Shopping Website</h3>
+            <p>
+              Created an e-commerce website with product listings,
+              shopping cart functionality and responsive design.
+            </p>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+          <h2>Certifications</h2>
+
+          <ul>
+            <li>Web Development Certification</li>
+            <li>JavaScript Certification</li>
+            <li>React Developer Certification</li>
+          </ul>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>
 
